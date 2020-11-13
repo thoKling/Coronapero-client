@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GuessWordService} from '../shared/guess-word.service';
 
 @Component({
   selector: 'app-guess-word',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuessWordComponent implements OnInit {
 
-  constructor() { }
+  constructor(private guessWordService: GuessWordService) { }
 
   ngOnInit(): void {
   }
 
   createGame(): void {
-   console.log('test');
+   this.guessWordService.createGame();
   }
 }
