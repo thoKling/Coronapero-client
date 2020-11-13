@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { GuessWordComponent } from './guess-word.component';
+import {GuessWordRoutingModule} from './guess-word-routing.module';
 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [GuessWordComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    GuessWordRoutingModule
   ]
 })
 export class GuessWordModule { }
