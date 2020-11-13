@@ -12,4 +12,7 @@ export class GuessWordComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  createGame(): void {
+   console.log('test');
+  }
 }

@@ -1,1 +1,13 @@
-<p>guess-word works!</p>
+<mat-card>
+  <mat-card-title>
+    Guess word !
+  </mat-card-title>
+  <mat-card-content>
+    <mat-form-field appearance="legacy">
+      <input matInput placeholder="Pseudo">
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="accent" (click)="createGame()">Créer une partie</button>
+  </mat-card-actions>
+</mat-card>
