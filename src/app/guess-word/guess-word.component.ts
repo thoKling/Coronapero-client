@@ -14,6 +14,6 @@ export class GuessWordComponent implements OnInit {
   }
 
   createGame(): void {
-   this.guessWordService.createGame();
+   this.guessWordService.createGame().subscribe(data => console.log(data));
   }
 }
